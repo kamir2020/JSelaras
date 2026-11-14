@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer utilities {
+    .dot-grid {
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+        background-size: 24px 24px;
+    }
+
+    .dot-grid-dark {
+        background-image: radial-gradient(circle, rgba(255, 255, 255, 0.05) 1px, transparent 1px);
+        background-size: 32px 32px;
+    }
+
+    .clip-diagonal {
+        clip-path: polygon(0 8%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .clip-diagonal-sm {
+        clip-path: polygon(0 4%, 100% 0, 100% 100%, 0 100%);
+    }
+
+    .animate-fade-in-up-init {
+        opacity: 0;
+    }
+}
